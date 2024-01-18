@@ -1,0 +1,60 @@
+#comment {
+    background-color:black; 
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+ #comment  form {
+    max-width: 600px; 
+    margin: 0 auto;
+  }
+  
+ #comment  h2 {
+    color:aqua;
+  }
+  
+  #comment p {
+    color:White;
+    margin-bottom: 30px;
+  }
+  
+  #comment label {
+    display: block;
+    margin-bottom: 8px;
+    color: WHite;
+  }
+  
+  #comment input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color:white;
+  }
+  
+ #comment button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #comment button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Optional: Add additional styling for form responsiveness */
+  @media (max-width: 768px) {
+    form {
+      padding: 0 20px;
+    }
+  }
+  

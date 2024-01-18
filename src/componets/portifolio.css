@@ -1,0 +1,63 @@
+
+#portfolioSection {
+  background-color:black;
+  padding: 20px 0; 
+  text-align: center;
+}
+#portfolioSection h2{
+color:white
+}
+
+
+.portifolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  margin-top: 20px;
+}
+
+.portifolioDiv{
+  max-width: 300px;
+  margin: 10px;
+  padding: 15px;
+  color: white;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  background-color: black;
+ 
+  box-shadow: 0 0 .5rem aqua;
+  transition: transform 0.4s ease-in-out; 
+}
+.portifolioDiv:hover {
+  transform: scale(1.15); 
+}
+.portifolioDiv img {
+  position: relative;
+  width: 300px;
+  height: 60%;
+  max-width: 100%; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+}
+.portifolioDiv h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom:10px;
+}
+.portifolioDiv p {
+  color: #666;
+}
+
+ .portifolioDiv a {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3498db; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.portifolioDiv a:hover {
+  background-color: #2980b9; 
+}
