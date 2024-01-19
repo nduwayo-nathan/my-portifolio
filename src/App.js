@@ -7,7 +7,7 @@ import Profile from './img/profile.jpg';
 import Profile2 from './img/pic.png';
 import { FaLinkedin,FaGithubSquare,FaWhatsappSquare } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+
 
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
             <div className='header'>
               <h1>FULL STACK WEB DEVELOPER</h1>
             </div>
-            <div className='imgText'></div>
+            <div className='imgText'>
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" 
               viewBox="-25 -25 250 250" className="liquid-circular-svg"> 
               <defs>
@@ -61,8 +61,9 @@ function App() {
               <path d="M102.08565075499753 0.021752061119926225 C72.57935865877405 -3.760956511348571 14.632016316964217 40.6642996982648 4.989804446763586 68.80604640421838 C-4.314207889586507 95.96072440168334 12.438286208984255 166.21339168752283 38.29003373750106 178.68850020099023 C77.17934033112235 197.45505821544424 188.303113925228 156.919388206364 198.86108357533246 115.04945694406054 C208.049825208395 78.60949800180423 139.36121015052152 4.800481208421173 102.08565075499753 0.021752061119926225Z" stroke="none" fill="url(#lgrad)"  />
             </svg>
             <img src={Profile2} alt='my pic'/>  
+            </div>
             <div class="btn-box">
-                <a class="btn" href="#">Download CV</a>
+                <a class="btn" href="./img/NDUWAYO Nathan' s CV.pdf" download="NDUWAYO Nathan' s CV.pdf">Download CV</a>
                 <a class="btn" href="#">Hire me</a>
             </div>        
            
@@ -84,13 +85,13 @@ function App() {
             <ContactMe/>
           </section>
           <section id='resume'>
-    
+          
           </section>
           <div className='footer'>
-     <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
-     </div>
+        <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
+      </div>
         </div>
-     </div>
+      </div>
     </div>
   );
 }
