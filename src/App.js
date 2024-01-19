@@ -84,7 +84,7 @@ function App() {
             <ContactMe/>
           </section>
           <section id='resume'>
-            hy
+    
           </section>
           <div className='footer'>
      <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
