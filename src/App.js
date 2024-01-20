@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
 
-     <div className="portifolio" >
+     
 
         <div className="left-section">
 
@@ -34,18 +34,19 @@ function App() {
 
           <section className='other'>
             <h4>Navigate...</h4>
+            <a href="#profile">Profile</a>
             <a href="#about-me">About me</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#portifolio">Portifolio</a>
             <a href="#contact-me">Contact me</a>
-            <a href="#resume">Resume</a>
+            
             
           </section>
         </div>
 
         <div className="right-section">
-          <section id='about-me'>
+          <section id='profile'>
             <div className='header'>
               <h1>FULL STACK WEB DEVELOPER</h1>
             </div>
@@ -68,8 +69,14 @@ function App() {
             </div>        
            
           </section>
+          <section id='about-me'>
+            <h1>About me</h1>
+            <p>I am talented Full-stack Developer with 3 years of coding experience.
+             Able to seek and maintain full-time position that offers web application
+            development skills, professional challenges utilizing interpersonal skills,
+            excellent time management and problem-solving skills.</p>
+          </section>
           <section id='skills'>
-            <h4>skills</h4>
             <Skills/>
           </section>
           <section id='experience'>
@@ -84,15 +91,11 @@ function App() {
           <section id='contact-me'>
             <ContactMe/>
           </section>
-          <section id='resume'>
-          
-          </section>
           <div className='footer'>
         <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
       </div>
         </div>
       </div>
-    </div>
   );
 }
 

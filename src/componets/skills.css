@@ -20,6 +20,7 @@
 	box-sizing: border-box;
 	content: "";
 }
+
 .skills h5{
   color:white;
   text-align:center;
@@ -517,14 +518,16 @@ ul.skills li.more input:checked + label:hover {
 
 
 @media only screen and (max-width: 1024px) {
-	.content { height: 60vh; }
+	.content { height:auto; }
 	.profile-skills {
 		flex-direction: row;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
 		top: 20px;
 	}
 	.profile-skills > div {
-		width: 47% !important;
+		width: 48% !important;
+		margin-top: 100px;
+		
 	}
 	.profile-skills > div:nth-child(3) {
 		width: 98% !important;
@@ -533,16 +536,14 @@ ul.skills li.more input:checked + label:hover {
 }
 
 
-/*** Mobile view disabled to get (almost) the desired thumbnail ***/
-/*** Uncomment below code to add the media query for mobile view ***/
 
-/*
 @media only screen and (max-width: 768px) {
 	.content { height: 60vh; }
 	.profile-skills {
 		flex-direction: row;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
 		top: 20px;
+		height: 100vh;
 	}
 	.profile-skills > div {
 		width: 98% !important;
@@ -560,17 +561,5 @@ ul.skills li.more input:checked + label:hover {
 		opacity: 1;
 		border-right-color: #2187e7;
 	}
-	ul.skills2 li span:before {
-		border-right-color: #9acd32;
-	}
-	ul.skills3 li span:before {
-		border-right-color: #ff4500;
-	}
-	ul.skills li span:after {
-		transition: var(--t1);
-		right: calc(calc(calc(100 - var(--per)) * 1%) - 40px);
-		opacity: 1;
-		background: var(--c1);
-	}
-}
-*/
+	
+} 

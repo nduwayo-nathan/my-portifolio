@@ -16,6 +16,8 @@ function App() {
                      <li className="sk-dis"><span>Design</span></li>
                      <li className="sk-pro"><span>Programing</span></li>
                      <li className="sk-ani"><span>Animation</span></li>
+                     <li className="sk-ani"><span>Editing</span></li>
+
                      <li className="more">
                         <input type="checkbox" id="more-con" />
                         <label htmlFor="more-con"></label>
@@ -27,11 +29,12 @@ function App() {
                   <input type="checkbox" id="sk2" />
                   <label htmlFor="sk2"></label>
                   <ul className="skills skills2">
-                     <li className="sk-gim"><span>Gimp</span></li>
+                     <li className="sk-gim"><span>DEV C++</span></li>
                      <li className="sk-ado"><span>Adobe&nbsp;CC</span></li>
                      <li className="sk-not"><span>Notepad++</span></li>
-                     <li className="sk-tri"><span>Tridion</span></li>
-                     <li className="sk-wor"><span>Wordpress</span></li>
+                     <li className="sk-tri"><span>Figma</span></li>
+                     <li className="sk-wor"><span>VISUAL STUDIO</span></li>
+                     <li className="sk-wor"><span>BLENDER</span></li>
                      <li className="more">
                         <input type="checkbox" id="more-pro" />
                         <label htmlFor="more-pro"></label>
@@ -43,11 +46,12 @@ function App() {
                   <input type="checkbox" id="sk3" />
                   <label htmlFor="sk3"></label>
                   <ul className="skills skills3">
-                     <li className="sk-css"><span>CSS</span></li>
-                     <li className="sk-htm"><span>HTML</span></li>
-                     <li className="sk-jav"><span>JS</span></li>
+                     <li className="sk-css"><span>CSS & HTML</span></li>
+                     <li className="sk-htm"><span>C & C++</span></li>
+                     <li className="sk-jav"><span>JS & NODEJS & EXPRESSJS</span></li>
                      <li className="sk-php"><span>PHP</span></li>
-                     <li className="sk-sql"><span>SQL</span></li>
+                     <li className="sk-sql"><span>Paython , DJANGO</span></li>
+                     <li className="sk-sql"><span>WEB 3</span></li>
                      <li className="more">
                         <input type="checkbox" id="more-len" />
                         <label htmlFor="more-len"></label>
