@@ -533,9 +533,12 @@ background: aqua;
     padding-bottom: 0.5em;
     
   }
+  .right-section #profile .imgText{
+   margin-top: 01em;
+  }
   .right-section #profile h1{
     position: relative;
-    font-size: 2em;
+    font-size: 1em;
     padding: 0.1em;
     
   }
