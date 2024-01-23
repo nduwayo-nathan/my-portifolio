@@ -13,9 +13,6 @@ import { MdMarkEmailRead } from "react-icons/md";
 function App() {
   return (
     <div className="App">
-
-     
-
         <div className="left-section">
 
           <section className='profile'>

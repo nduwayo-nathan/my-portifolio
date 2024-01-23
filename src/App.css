@@ -443,7 +443,90 @@ background: aqua;
 
 
 @media only screen and (max-width: 768px) {
+  *{
+    padding: 1px;
+
+  }
+ .App{
+  position: relative;
+    display: inline-block;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    
+  
+    
+  }
+
+  .left-section{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 17vh;
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 0.5em;
+    background-color: rgb(34, 33, 33);
+   
+    
+  }
+  .left-section section{
+    padding: 0;
+    margin-top:-10px;
+
+  }
+  .left-section  .profile{
+    height: 100%;
+    width: 28%;
+    padding: 0;
+    
+  }
+  .left-section  .contact-me{
+    height: 5vh;
+    width: 65%;
+  
+  }
+  .left-section  .contact-me h4{
+    display: none;
+  }
+  .left-section  .contact-me a{
+    width: 20%;
+    font-size: 0.9em;
+    box-shadow: 0 0 0.1rem aqua;
+  }
+  .left-section  .other{
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+   
+  }
+  .left-section  .other h4{
+    width: 100%;
+    display: none;
+  }
+  .left-section  .other a{
+    width: 29%;
+    letter-spacing: 0;
+    font-size: 0.5em;
+    margin: 0.5em;
+    box-shadow: 0 0 0.1rem aqua;
+    
+  }
+  .right-section{
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    margin-top:-10px;
+  }
 	.right-section #profile{
+   
    
     height: auto;
     padding: 0.1em;
@@ -452,12 +535,12 @@ background: aqua;
   }
   .right-section #profile h1{
     position: relative;
-    font-size: 90%;
+    font-size: 2em;
     padding: 0.1em;
-    margin-bottom: 1em;
+    
   }
 	.right-section #skills{
-    height: 200vh;
+    height: auto;
   }
   .right-section #profile svg{
     width: 87%;

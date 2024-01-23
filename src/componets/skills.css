@@ -538,7 +538,9 @@ ul.skills li.more input:checked + label:hover {
 
 
 @media only screen and (max-width: 768px) {
-	.content { height: 60vh; }
+	.content { height:210vh ;
+		
+	}
 	.profile-skills {
 		flex-direction: row;
         flex-wrap: wrap;
