@@ -1,7 +1,7 @@
 /* Add this to your existing CSS or create a new CSS file for your portfolio styles */
 
 #project {
-  background-color:black; /* Background color for the portfolio section */
+  /* Background color for the portfolio section */
   padding: 50px 0; /* Adjust the padding as needed */
   text-align: center;
 }
@@ -24,9 +24,9 @@
   width: 370px; /* Set a max-width to prevent it from becoming too wide */
   margin: 15px;
   padding: 10px;
-  border: 1px solid #818080; /* Border color for each project box */
+  border: 1px solid #302e2e; /* Border color for each project box */
   border-radius: 8px;
-  background-color: #2b2a2a;
+  background-color: #090810;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   
 }

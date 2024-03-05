@@ -1,6 +1,5 @@
 
 #portfolioSection {
-  background-color:black;
   padding: 20px 0; 
   text-align: center;
 }
@@ -23,7 +22,7 @@ color:white
   color: white;
   border: 1px solid #ddd; 
   border-radius: 8px;
-  background-color: black;
+ 
  
   box-shadow: 0 0 .5rem aqua;
   transition: transform 0.4s ease-in-out; 

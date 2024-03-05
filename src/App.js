@@ -5,6 +5,7 @@ import Projects from './componets/projects.jsx';
 import ContactMe from './componets/comment.jsx';
 import Profile from './img/profile.jpg';
 import Profile2 from './img/pic.png';
+import Certificates from './componets/certification';
 import { FaLinkedin,FaGithubSquare,FaWhatsappSquare } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 
@@ -13,6 +14,8 @@ import { MdMarkEmailRead } from "react-icons/md";
 function App() {
   return (
     <div className="App">
+      <div className='blur1'></div>
+      <div className='blur2'></div>
         <div className="left-section">
 
           <section className='profile'>
@@ -33,6 +36,7 @@ function App() {
             <h4>Navigate...</h4>
             <a href="#profile">Profile</a>
             <a href="#about-me">About me</a>
+            <a href="#certificates">Certificates</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#portifolio">Portifolio</a>
@@ -75,6 +79,9 @@ function App() {
           </section>
           <section id='skills'>
             <Skills/>
+          </section>
+          <section id='certificates'>
+            <Certificates/>
           </section>
           <section id='experience'>
             
