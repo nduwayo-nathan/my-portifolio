@@ -263,8 +263,7 @@ color: white;
 }
 
 #profile .imgText {
-  position: relative;
-  height: 75vh;
+  height: 70vh;
   width: 100%;
   padding: 2em;
   text-align: center;
@@ -275,23 +274,26 @@ color: white;
 }
 
 .liquid-circular-svg {
-  width: 90%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   position: absolute;
   bottom: 0;
-  margin-left: -12%;
+  border-radius: 50%;
   text-align: center;
   animation: rotateAnimation 40s linear infinite;
+  margin-bottom: 11em;
+  
 
 }
 
 #profile img {
   max-width: 100%;
   border-radius: 50%;
-  width: 70%;
+  width: 65%;
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(9, 9, 9, 0.1), rgba(255, 255, 255, 1));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgb(119, 119, 119));
+
 }
 
 #profile h5 {
