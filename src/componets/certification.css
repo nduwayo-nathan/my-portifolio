@@ -1,57 +1,112 @@
 /* certification.css */
-
 #certificates {
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  .certificate-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .certificate-item {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(223, 222, 222, 0.2);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .certificate-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .certificate-item img {
-    width: 250px; /* Adjust the width as needed */
-    height: 250px; /* Adjust the height as needed */
-    border-radius: 10%;
-   
-    border: 4px solid #1e0b39;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .certificate-item p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Optional: Add a background color or gradient to the entire section */
-  #certificates {
+  height: 600px;
+}
 
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(119, 133, 142, 0.2);
-  }
+#certificates h2 {
+  position: relative;
+  color: rgb(116, 139, 139);
+  width: 100%;
+  text-align: center;
+  margin: 0.5em;
+}
+
+#certificates .swiper {
+  width: 640px;
+  height: 500px;
+  padding: 2em;
+}
+
+#certificates .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#certificates .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.3s;
+}
+#certificates .swiper:hover .swiper-slide{
+ background-color: red;
+  transform: scale(1.1);
+}
+
+#certificates .swiper-slide:hover img {
+  border: 3px solid white;
+  transform: scale(1.1);
+}
+
+#certificates .certificate-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 89%;
+  left: 50%;
+  width: 100%;
+  height: 6em;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgb(47, 48, 48));
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.9s;
+  backdrop-filter: blur(2px)
+
+}
+#certificates .certificate-info h3{
+  color:rgb(20, 123, 155);
+  bottom:2px;
+  position: relative;
+  width: 100%;
+
+}
+#certificates .certificate-info p{
   
+  position: relative;
+  width: 100%;
+}
+
+
+#certificates .swiper-slide:hover .certificate-info {
+  opacity: 1;
+}
+
+#certificates .swiper-slide:nth-child(1n) {
+  border: 3px solid rgb(133, 64, 55);
+}
+
+#certificates .swiper-slide:nth-child(2n) {
+  border: 3px solid rgb(0, 140, 255);
+}
+
+#certificates .swiper-slide:nth-child(3n) {
+  border: 3px solid rgb(10, 184, 111);
+}
+
+#certificates .swiper-slide:nth-child(4n) {
+  border: 3px solid rgb(211, 122, 7);
+}
+
+#certificates .swiper-slide:nth-child(5n) {
+  border: 3px solid rgb(118, 163, 12);
+}
+
+#certificates .swiper-slide:nth-child(6n) {
+  border: 3px solid rgb(180, 10, 47);
+}
+
+#certificates.swiper-slide:nth-child(7n) {
+  border: 3px solid rgb(35, 99, 19);
+}

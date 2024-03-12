@@ -21,38 +21,44 @@
 	content: "";
 }
 
+#skills{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	padding: 1em;
+}
+
 .skills h5{
-  color:white;
+  color:rgb(53, 54, 54);
   text-align:center;
-  font-size: medium;
+  font-size:2rem;
+ 
+  height: 3em;
 }
 
-.content {
-  position: relative;
-	width: auto;
-	height: 74vh;
-
-
-}
 
 .profile-skills {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-	display: flex;
-	top: 100px;
-	position: relative;
-	width: 100%;
-	
- 
-  
+
+justify-content: center;
+align-items: center;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+position: relative;
+width: 100%;
+height: auto;
+padding:1em 0;   
 }
 
 .profile-skills > div {
-	width: 32%;
-	margin: 1%;
+	width: 25.2%;
+	margin: 2%;
 	border-radius: 2px;
 	position: relative;
+	padding: 0.2em;
+
+	
  
 }
 
@@ -87,6 +93,7 @@ ul.skills:before {
 	transition: var(--t1);
 	font-size:1.2em;
 	transform: scaleY(1.65);
+	
 }
 
 ul.skills2:before {
@@ -171,6 +178,7 @@ ul.skills li:before {
 	border: 1px solid #111;
 	border-color: #111 #323232 #323232 #111;
 	--track: #52585c40;
+	
 	background: linear-gradient(
 		90deg,
 		var(--track) calc(calc(var(--per) * 1%) + 4px),
@@ -198,6 +206,7 @@ ul.skills li:after {
 	bottom: 0;
 	transition: all var(--dur) ease 0s;
 	animation: start 1s ease 0s 2 alternate;
+	
 }
 
 ul.skills2 li:after {
@@ -326,6 +335,7 @@ ul.skills li.sk-pug { --per: 40; }
 
 .profile-skills input {
 	display: none;
+	
 }
 
 .profile-skills label {
@@ -340,6 +350,7 @@ ul.skills li.sk-pug { --per: 40; }
 	cursor: pointer;
 	transition: var(--t1);
 	box-shadow: 0 0 0 0 var(--w1);
+	
 }
 
 .profile-skills label:before {
@@ -357,6 +368,7 @@ ul.skills li.sk-pug { --per: 40; }
 	height: 15px;
 	border-radius: 2px;
 	transition: var(--t1);
+	
 }
 
 .profile-skills label:hover {

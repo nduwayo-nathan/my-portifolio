@@ -13,7 +13,9 @@ import { MdMarkEmailRead } from "react-icons/md";
 
 function App() {
   return (
+   
     <div className="App">
+       
       <div className='blur1'></div>
       <div className='blur2'></div>
         <div className="left-section">

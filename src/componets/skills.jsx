@@ -5,7 +5,7 @@ function App() {
    return (
       <div className="skills">
          <h5>Technical and Professional</h5>
-         <div className="content">
+        
             <div className="profile-skills">
                <div>
                   <input type="checkbox" id="sk1" />
@@ -59,7 +59,7 @@ function App() {
                      </li>
                   </ul>
                </div>
-            </div>
+            
          </div>
       </div>
    );

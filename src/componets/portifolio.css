@@ -1,19 +1,43 @@
 
-#portfolioSection {
-  padding: 20px 0; 
+
+#portifolio{
+  margin-top: 2rem;
+  height: 800px;
+  padding: 5em 0;
+}
+#portifolio  .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#portifolio  .swiper-slide {
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  width: 350px;
+  height: 500px;
+  color: white;
+}
+
+#portifolio .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  
+
+}
+
+#portifolio  h2{
+  color: rgb(85, 89, 90);
+  width: 100%;
   text-align: center;
 }
-#portfolioSection h2{
-color:white
-}
 
-
-.portifolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; 
-  margin-top: 20px;
-}
 
 .portifolioDiv{
   max-width: 300px;
@@ -60,3 +84,5 @@ color:white
 .portifolioDiv a:hover {
   background-color: #2980b9; 
 }
+
+
