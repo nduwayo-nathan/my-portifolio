@@ -107,7 +107,7 @@ align-items: center;
 text-align: center;
 font-weight: bolder;
 font-family:Arial;
-letter-spacing: -1px;
+margin-top: 0.5em;
 color:white
 
 }
@@ -133,9 +133,8 @@ color:white
   transition: .6s;
   box-shadow: 0 0 0.3rem aqua;
   z-index:1;
-
   border-radius:5px;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0.2em;
 
 }
@@ -172,7 +171,7 @@ width: 100%;
   text-align: center;
   font-weight: bolder;
   font-family:Arial;
-  letter-spacing: -1px;
+ margin-top: 0.5em;
   color:white
 }
 .other a {
@@ -381,14 +380,18 @@ background: aqua;
 }
 
 .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
   position: relative;
-  height: 2.5vh;
+  height: 3vh;
   width: 100%;
   text-align: center;
   font-size: 0.6em;
   font-weight: bolder;
-  color: white;
+  color: rgb(49, 153, 223);
   background-color: black;
+  
 }
 
 ::-webkit-scrollbar{
