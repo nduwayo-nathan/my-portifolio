@@ -2,7 +2,7 @@
   margin: 0;
 }
 .skeleton {
-  background-color: #f0f0f0; /* Set a background color for the skeleton */
+  background-color: #2d6464; /* Set a background color for the skeleton */
 }
 
 .skeleton-container {
@@ -18,7 +18,7 @@
 .skeleton-header {
   width: 100%;
   height: 30px; /* Adjust the height of the header skeleton */
-  background-color: #dcdcdc; /* Set a background color for the header skeleton */
+  background-color: rgb(39, 38, 38); /* Set a background color for the header skeleton */
   border-radius: 4px; /* Adjust the border-radius as needed */
   margin-bottom: 10px;
 }
@@ -26,10 +26,14 @@
 .skeleton-content {
   width: 100%;
   height: 20px; /* Adjust the height of the content skeleton */
-  background-color: #e0e0e0; /* Set a background color for the content skeleton */
+  background-color: #252424; /* Set a background color for the content skeleton */
   border-radius: 4px; /* Adjust the border-radius as needed */
   margin-bottom: 10px;
 }
+
+
+
+
 
 
 

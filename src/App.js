@@ -19,6 +19,7 @@ function App() {
     // Simulate loading delay
     const timer = setTimeout(() => {
       setLoading(false);
+      console.log('Loading set to false');
     }, 2000);
 
     // Clean up the timer on component unmount

@@ -77,8 +77,8 @@ const Portfolio = () => {
       > 
        <div className="portifolio-container">
          {projects.map((project, index) => (
-          <SwiperSlide>
-          <div className="portifolioDiv" key={index}>
+          <SwiperSlide key={index}>
+          <div className="portifolioDiv">
              <h3>{project.title}</h3>
              <img src={project.image} alt={`${project.title} Preview`} />
              <h4>{project.Heading}</h4>
