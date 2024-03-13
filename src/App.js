@@ -1,26 +1,37 @@
+// App.jsx
+
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Skills from './componets/skills.jsx';
-import Portfolio  from './componets/portifolio.jsx';
+import Portfolio from './componets/portifolio.jsx';
 import Projects from './componets/projects.jsx';
 import ContactMe from './componets/comment.jsx';
 import Profile from './img/profile.jpg';
 import Profile2 from './img/pic.png';
 import Certificates from './componets/certification';
-import { FaLinkedin,FaGithubSquare,FaWhatsappSquare } from "react-icons/fa";
-import { MdMarkEmailRead } from "react-icons/md";
-
-
+import { FaLinkedin, FaGithubSquare, FaWhatsappSquare } from 'react-icons/fa';
+import { MdMarkEmailRead } from 'react-icons/md';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    // Clean up the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-   
-    <div className="App">
-       
+    <div className={`App ${loading ? 'skeleton' : ''}`}>
       <div className='blur1'></div>
       <div className='blur2'></div>
-        <div className="left-section">
-
-          <section className='profile'>
+      <div className='left-section'>
+        
+      <section className='profile'>
             <img src={Profile} alt='profile'/>
             <h3>NDUWAYO Nathan</h3>
           </section>
@@ -46,11 +57,11 @@ function App() {
             
             
           </section>
-        </div>
+      </div>
 
-        <div className="right-section">
-          <section id='profile'>
-            <div className='header'>
+      <div className='right-section'>
+        <section id='profile'>
+        <div className='header'>
               <h1>FULL STACK WEB DEVELOPER</h1>
             </div>
             <div className='imgText'>
@@ -71,37 +82,82 @@ function App() {
                 <a class="btn" href="#">Hire me</a>
             </div>        
            
-          </section>
-          <section id='about-me'>
-            <h1>About me</h1>
-            <p>I am talented Full-stack Developer with 3 years of coding experience.
-             Able to seek and maintain full-time position that offers web application
+        </section>
+        <section id='about-me'>
+        <h1>About me</h1>
+            <p>I am a talented Full-stack Developer with 3 years of coding experience.
+             Able to seek and maintain a full-time position that offers web application
             development skills, professional challenges utilizing interpersonal skills,
-            excellent time management and problem-solving skills.</p>
-          </section>
-          <section id='skills'>
-            <Skills/>
-          </section>
-          <section id='certificates'>
-            <Certificates/>
-          </section>
-          <section id='experience'>
-            
-          </section>
-          <section id='portifolio'>
-            <Portfolio/>
-          </section>
-          <section id='projects'>
-            <Projects/>
-          </section>
-          <section id='contact-me'>
-            <ContactMe/>
-          </section>
-          <div className='footer'>
-        <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
-      </div>
+            excellent time management, and problem-solving skills.</p>
+        </section>
+        <section id='skills'>
+          {loading ? (
+            <div className='skeleton-container'>
+              <div className='skeleton-header'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+            </div>
+          ) : (
+            <Skills />
+          )}
+        </section>
+        <section id='certificates'>
+          {loading ? (
+            <div className='skeleton-container'>
+              <div className='skeleton-header'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+            </div>
+          ) : (
+            <Certificates />
+          )}
+        </section>
+        <section id='experience'>
+          {/* Existing experience section content... */}
+        </section>
+        <section id='portifolio'>
+          {loading ? (
+            <div className='skeleton-container'>
+              <div className='skeleton-header'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+            </div>
+          ) : (
+            <Portfolio />
+          )}
+        </section>
+        <section id='projects'>
+          {loading ? (
+            <div className='skeleton-container'>
+              <div className='skeleton-header'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+            </div>
+          ) : (
+            <Projects />
+          )}
+        </section>
+        <section id='contact-me'>
+          {loading ? (
+            <div className='skeleton-container'>
+              <div className='skeleton-header'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+              <div className='skeleton-content'></div>
+            </div>
+          ) : (
+            <ContactMe />
+          )}
+        </section>
+        <div className='footer'>
+          <p>&copy; 2024 NDUWAYO Nathan. All rights reserved.</p>
         </div>
       </div>
+    </div>
   );
 }
 
