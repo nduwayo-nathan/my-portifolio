@@ -1,8 +1,7 @@
-/* Add this to your existing CSS or create a new CSS file for your portfolio styles */
 
 #project {
-  /* Background color for the portfolio section */
-  padding: 50px 0; /* Adjust the padding as needed */
+ 
+  padding: 50px 0; 
   text-align: center;
 }
 #project h2{
@@ -13,18 +12,18 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* Adjust as needed */
-  margin-top: 10px; /* Add margin between projects */
+  justify-content: center; 
+  margin-top: 10px; 
 }
 
 .project {
   position: relative;
-  width: 100%; /* Project box takes up 100% of the container width */
+  width: 100%;
   max-width: 400px;
-  width: 370px; /* Set a max-width to prevent it from becoming too wide */
+  width: 370px; 
   margin: 15px;
   padding: 10px;
-  border: 1px solid #302e2e; /* Border color for each project box */
+  border: 1px solid #302e2e; 
   border-radius: 8px;
   background-color: #090810;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
@@ -35,7 +34,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;/* Project box takes up 100% of the container width */
   height: 100%;
   border-radius: 50%;
   border: 5px dashed aqua; 
@@ -87,4 +86,64 @@
 
 .project a:hover {
   background-color:rgb(55, 60, 60); /* Adjust the color on hover */
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .project {
+    position: relative;
+    width: 100%; 
+    max-width: 400px;
+    width: 370px;
+    margin: 2em;
+    padding: 10px;
+    border: 1px solid #302e2e; 
+    border-radius: 8px;
+    background-color: #090810;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    
+  }
+
+  .project img {
+    margin-top: 1em;
+    max-width: 100%; /* Make sure images don't exceed the width of their container */
+    border-radius: 8px; /* Optional: Add rounded corners to project images */
+    margin-bottom: 10px; /* Add space between image and project description */
+  }
+  
+  .project h3 {
+    color: #3498db;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    color: #666;
+    font-size: 1em;
+  
+  }
+  
+  .project-details {
+    margin-top: 10px;
+  }
+  
+  .project a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:rgb(61, 94, 94); /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  .project a:hover {
+    background-color:rgb(55, 60, 60); /* Adjust the color on hover */
+  }
+  
+
+
 }

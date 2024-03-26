@@ -511,6 +511,13 @@ background: aqua;
 
 
 @media only screen and (max-width: 768px) {
+
+
+
+
+  
+
+
   *{
     padding: 1px;
 
@@ -521,9 +528,112 @@ background: aqua;
     background-color: rgb(39, 39, 39);
     width: 100%;
     
-  
-    
   }
+  .blur1{
+    position:absolute;
+    background-color: rgb(77, 204, 196);
+    width: 30%;
+    height: 50%;
+    left: 2%;
+    top:2%;
+    filter: blur(80px);
+   
+  }
+  .blur2{
+    position:absolute;
+    background-color: rgb(20, 199, 187);
+    width: 30%;
+    height: 50%;
+    right: 2%;
+    bottom:2%;
+    filter: blur(80px);
+   
+  }
+.left-section  .other  {
+    display: none;
+  }
+  
+  ul.skills li.more label {
+    background: linear-gradient(163deg, var(--b2) 50%, var(--w1) 50%);
+    right: 0;
+    left: inherit;
+    top: inherit;
+    bottom: -40px;
+    color: var(--b2);
+    background-size: 10% 300%;
+    background-position-y: 100%;
+    transition: var(--t1);
+    width: 45px;
+    height: 45px;
+    right: -10px;
+  }
+  
+  ul.skills li.more label:before {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+    content: "+";
+    content: "\271A";
+    font-size: 35px;
+    line-height: 55px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: var(--c1);
+  }
+  
+  ul.skills li.more label:hover {
+    background-position-y: 0%;
+    color: var(--w1) !important;
+    transition: var(--t1);
+    box-shadow: 0 0 0 10px var(--w1);
+  }
+  
+  ul.skills li.more span {
+    background: #1c1c1c;
+    border-radius: 1px;
+    margin: 10px 10px 1px 1px;
+    padding: 4px 8px;
+    display: inline-block;
+    border: 1px solid #111;
+    border-color: #111 #323232 #323232 #111;
+  }
+  
+  ul.skills li.more span:hover {
+    color: black;
+    background: var(--c1);
+    box-shadow: 0px 0px 5px 1px var(--c1);
+    border-color: #fff2;
+  
+  }
+  
+  ul.skills li.more input:checked + label {
+    box-shadow: 0 0 0 9px var(--w1);
+    background-position-y: 0%;
+    color: var(--w0);
+    bottom: -40px;
+  }
+  
+  ul.skills li.more input:checked + label:before {
+    content: "\2759";
+    transform: rotate(90deg);
+    font-weight: 400;
+    
+    margin-left: 8px;
+  }
+  
+  ul.skills li.more input:checked + label:hover {
+    box-shadow: 0 0 0 0 var(--w1);
+    background-position-y: 100%;
+    color: var(--b2) !important;
+  }
+
+
+
+
+
+
 
   .left-section{
     box-sizing: border-box;
@@ -601,15 +711,80 @@ background: aqua;
     padding-bottom: 0.5em;
     
   }
-  .right-section #profile .imgText{
-   margin-top: 01em;
+
+  #profile .header h1 {
+    text-align: center;
+    font-size: 2em;
+    color:aqua; 
+    font-weight: bolder;
+    text-shadow: none;
+    animation: ani-float 60s infinite ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
   }
-  .right-section #profile h1{
+  
+  #profile .imgText {
+    height: 50vh;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+    margin-top: 2em;
+  
+   
+  
+  }
+  
+  .liquid-circular-svg {
+    width: 60%;
+    height: 50%;
+    left: 9%;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    animation: rotateAnimation 40s linear infinite;
+  
+  
+  }
+  
+  #profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 100%;
+    top: 5%;
     position: relative;
-    font-size: 1em;
-    padding: 0.1em;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgb(119, 119, 119));
+  
+  }
+
+  #profile .btn-box a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: aqua;
+    color: black;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: .6s;
+    box-shadow: 0 0 .5rem aqua;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border: 3px solid aqua;
+    text-decoration: none;
+  
     
   }
+  .right-section #about-me{
+    color: white;
+    margin-top: 2em;
+    height: 35vh;
+    padding: 1em;
+  }
+  
 	.right-section #skills{
     height: auto;
   }

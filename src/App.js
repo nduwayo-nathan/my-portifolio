@@ -47,6 +47,7 @@ function App() {
           </section>
 
           <section className='other'>
+          <label htmlFor="other"></label>
             <h4>Navigate...</h4>
             <a href="#profile">Profile</a>
             <a href="#about-me">About me</a>

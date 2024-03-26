@@ -56,13 +56,14 @@ padding:1em 0;
 	margin: 2%;
 	border-radius: 2px;
 	position: relative;
-	padding: 0.2em;
+	padding: 0.1em;
 
 	
  
 }
 
 ul.skills {
+	
 	width: 100%;
 	position: relative;
 	padding: 3px 2px;
@@ -550,14 +551,19 @@ ul.skills li.more input:checked + label:hover {
 
 
 @media only screen and (max-width: 768px) {
-	.content { height:210vh ;
+	.content { 
+		height:220vh ;
+		padding-bottom: 2em;
 		
 	}
 	.profile-skills {
 		flex-direction: row;
         flex-wrap: wrap;
 		top: 20px;
-		height: 100vh;
+		height: auto;
+		
+		
+		padding-bottom: 2em;
 	}
 	.profile-skills > div {
 		width: 98% !important;

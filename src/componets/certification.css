@@ -70,3 +70,49 @@
 #certificates.swiper-slide:nth-child(7n) {
   border: 3px solid rgb(35, 99, 19);
 }
+
+
+
+@media only screen and (max-width: 768px) {
+/* certification.css */
+#certificates {
+  height: 450px;
+}
+
+#certificates h2 {
+  position: relative;
+  color: rgb(111, 150, 150);
+  width: 100%;
+  text-align: center;
+  margin: 0.5em;
+}
+
+#certificates .swiper {
+  position: relative;
+  width: 380px;
+  height: 310px;
+  padding: 2em;
+
+  
+}
+
+
+#certificates .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.3s;
+}
+
+#certificates .swiper-slide:hover img {
+  border: 3px solid white;
+  transform: scale(1.01);
+}
+
+
+
+
+
+  
+}
