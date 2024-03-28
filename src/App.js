@@ -32,9 +32,9 @@ function App() {
       <div className='blur2'></div>
       <div className='left-section'>
         
-      <section className='profile'>
-            <img src={Profile} alt='profile'/>
-            <h3>NDUWAYO Nathan</h3>
+          <section className='profile'>
+                <img src={Profile} alt='profile'/>
+                <h3>NDUWAYO Nathan</h3>
           </section>
           <section className='contact-me'>
             <h4>Contact me</h4> 
@@ -47,18 +47,18 @@ function App() {
           </section>
 
           <section className='other'>
-          <label htmlFor="other"></label>
-            <h4>Navigate...</h4>
-            <a href="#profile">Profile</a>
-            <a href="#about-me">About me</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#portifolio">Portifolio</a>
-            <a href="#contact-me">Contact me</a>
-            
-            
-          </section>
+         <input type="checkbox" id="toggle-menu" class="toggle-menu"/>
+        <label for="toggle-menu" class="menu-header">Nvgt...</label>
+        <div class="menu-items">
+          <a href="#profile">Profile</a>
+          <a href="#about-me">About me</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#portifolio">Portifolio</a>
+          <a href="#contact-me">Contact me</a>
+        </div>
+        </section>
       </div>
 
       <div className='right-section'>

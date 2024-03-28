@@ -325,7 +325,6 @@ color: white;
   width: 65%;
   bottom: 4%;
   position: relative;
-
   z-index: 1;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgb(119, 119, 119));
 
@@ -513,20 +512,21 @@ background: aqua;
 @media only screen and (max-width: 768px) {
 
 
-
-
-  
-
-
   *{
     padding: 1px;
+   
 
   }
  .App{
-  position: relative;
+    position: relative;
     display: inline-block;
-    background-color: rgb(39, 39, 39);
     width: 100%;
+    padding: 0;
+    margin: 0;
+   height: 100vh;
+
+   
+  
     
   }
   .blur1{
@@ -549,121 +549,39 @@ background: aqua;
     filter: blur(80px);
    
   }
-.left-section  .other  {
-    display: none;
-  }
-  
-  ul.skills li.more label {
-    background: linear-gradient(163deg, var(--b2) 50%, var(--w1) 50%);
-    right: 0;
-    left: inherit;
-    top: inherit;
-    bottom: -40px;
-    color: var(--b2);
-    background-size: 10% 300%;
-    background-position-y: 100%;
-    transition: var(--t1);
-    width: 45px;
-    height: 45px;
-    right: -10px;
-  }
-  
-  ul.skills li.more label:before {
-    border: 0;
-    height: 100%;
-    width: 100%;
-    transform: rotate(0deg);
-    content: "+";
-    content: "\271A";
-    font-size: 35px;
-    line-height: 55px;
-    left: 0;
-    top: 0;
-    text-align: center;
-    color: var(--c1);
-  }
-  
-  ul.skills li.more label:hover {
-    background-position-y: 0%;
-    color: var(--w1) !important;
-    transition: var(--t1);
-    box-shadow: 0 0 0 10px var(--w1);
-  }
-  
-  ul.skills li.more span {
-    background: #1c1c1c;
-    border-radius: 1px;
-    margin: 10px 10px 1px 1px;
-    padding: 4px 8px;
-    display: inline-block;
-    border: 1px solid #111;
-    border-color: #111 #323232 #323232 #111;
-  }
-  
-  ul.skills li.more span:hover {
-    color: black;
-    background: var(--c1);
-    box-shadow: 0px 0px 5px 1px var(--c1);
-    border-color: #fff2;
-  
-  }
-  
-  ul.skills li.more input:checked + label {
-    box-shadow: 0 0 0 9px var(--w1);
-    background-position-y: 0%;
-    color: var(--w0);
-    bottom: -40px;
-  }
-  
-  ul.skills li.more input:checked + label:before {
-    content: "\2759";
-    transform: rotate(90deg);
-    font-weight: 400;
-    
-    margin-left: 8px;
-  }
-  
-  ul.skills li.more input:checked + label:hover {
-    box-shadow: 0 0 0 0 var(--w1);
-    background-position-y: 100%;
-    color: var(--b2) !important;
-  }
-
-
-
-
-
-
 
   .left-section{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     width: 100%;
-    height: 17vh;
-    border-radius: 0;
-    padding: 0;
-    padding-bottom: 0.5em;
-    background-color: rgb(34, 33, 33);
-   
-    
-  }
-  .left-section section{
-    padding: 0;
-    margin-top:-10px;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius:1px;
+    margin-bottom:0.8em;
 
   }
   .left-section  .profile{
-    height: 100%;
-    width: 28%;
-    padding: 0;
-    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 14%;
+  }
+  .left-section .profile img{
+    height: 5vh;
+    width: 50%;
+    border-radius: 50%;
+   
   }
   .left-section  .contact-me{
-    height: 5vh;
-    width: 65%;
+    position: relative;
+    height: auto;
+    width: 40%;   
+    height: 3em;
+
   
   }
   .left-section  .contact-me h4{
@@ -674,34 +592,62 @@ background: aqua;
     font-size: 1em;
     box-shadow: 0 0 0.1rem aqua;
   }
-  .left-section  .other{
-    margin: 0;
-    padding: 0;
-    height: 10vh;
-    width: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-   
+  
+
+
+.menu-header {
+  position: relative;
+  cursor: pointer;
+  height: 3vh;
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: white;
+}
+.menu-items,#toggle-menu {
+  display: none;
+}
+.toggle-menu:checked + .menu-header + .menu-items {
+  display: block;
+}
+
+.menu-items a {
+  padding: 2px;
+  width:auto;
+  text-decoration: none;
+  color: white; 
+  display: inline-block;
+  margin:1px;
+}
+.menu-items a:hover {
+  background-color: #2e4c50;
+  color: white;
+ 
+}
+
+
+
+  
+  .left-section  .other{
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 10px;
+    height: auto;
+    width:100%;
+    justify-content: center;
+    ;
   }
-  .left-section  .other h4{
-    width: 100%;
-    display: none;
-  }
-  .left-section  .other a{
-    width: 29%;
-    letter-spacing: 0;
-    font-size: 0.5em;
-    margin: 0.5em;
-    box-shadow: 0 0 0.1rem aqua;
-    
-  }
+ 
+
   .right-section{
     position: relative;
     width: 100%;
-    height: 82vh;
+    height:75vh;
     margin-top:-10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(33, 49, 48);
   }
 	.right-section #profile{
    
@@ -809,4 +755,7 @@ background: aqua;
   }
 }
 
+.footer{
+width: 100%;
+}
 
