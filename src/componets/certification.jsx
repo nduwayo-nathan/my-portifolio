@@ -6,13 +6,14 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 
-import certificate1 from '../img/nathan-java.jpg';
+import certificate5 from '../img/nathan-java.jpg';
 import certificate2 from '../img/certificate-CS_1-Nathan NDUWAYO.png';
 import certificate3 from '../img//unicef-certificate.png';
-import certificate4 from '../img/project2.jpeg';
-import certificate5 from '../img/project2.jpeg';
-import certificate6 from '../img/project2.jpeg';
+import certificate4 from '../img/nathan_CSO.png';
+import certificate1 from '../img/nathan_java_coursera.png';
+import certificate6 from '../img/nathan_node_coursera.png';
 import certificate7 from '../img/project2.jpeg';
+import certificate8 from '../img/nathan_badge_node.png';
 
 export default function App() {
   return (
@@ -51,6 +52,9 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <img src={certificate7} alt="Certificate 7" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={certificate8} alt="Certificate 8" />
         </SwiperSlide>
       </Swiper>
     </>

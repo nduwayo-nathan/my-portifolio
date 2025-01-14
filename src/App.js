@@ -6,7 +6,7 @@ import Skills from './componets/skills.jsx';
 import Portfolio from './componets/portifolio.jsx';
 import Projects from './componets/projects.jsx';
 import ContactMe from './componets/comment.jsx';
-import Profile from './img/profile.jpg';
+import Profile from './img/Loud roar.jpeg';
 import Profile2 from './img/pic.png';
 import Certificates from './componets/certification';
 import { FaLinkedin, FaGithubSquare, FaWhatsappSquare } from 'react-icons/fa';
