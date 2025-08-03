@@ -6,7 +6,7 @@ import Skills from './componets/skills.jsx';
 import Portfolio from './componets/portifolio.jsx';
 import Projects from './componets/projects.jsx';
 import ContactMe from './componets/comment.jsx';
-import Profile from './img/Loud roar.jpeg';
+import Profile from './img/profilee.jpg';
 import Profile2 from './img/pic.png';
 import Certificates from './componets/certification';
 import { FaLinkedin, FaGithubSquare, FaWhatsappSquare } from 'react-icons/fa';
@@ -80,7 +80,7 @@ function App() {
             <img src={Profile2} alt='my pic'/>  
             </div>
             <div class="btn-box">
-                <a class="btn" href="./img/NDUWAYO Nathan' s CV.pdf" download="NDUWAYO Nathan' s CV.pdf">Download CV</a>
+                <a class="btn" href="./img/NDUWAYO_Nathan_CV" download="NDUWAYO_Nathan_CV.pdf">Download CV</a>
                 <a class="btn" href="#">Hire me</a>
             </div>        
            
